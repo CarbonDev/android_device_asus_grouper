@@ -1,4 +1,3 @@
-windowsmgr.max_events_per_sec=275
 #
 # system.prop for grouper
 #
@@ -17,10 +16,4 @@ debug.nfc.se=false
 # Set Default LCD Density
 ro.sf.lcd_density=213
 
-# Fields For VM Heapsize
-dalvik.vm.heapsize=256m
-dalvik.vm.heapmaxfree=8m
-dalvik.vm.heapminfree=2m
-dalvik.vm.heapstartsize=16m
-dalvik.vm.heapgrowthlimit=128m
-dalvik.vm.heaputilization=0.75
+windowsmgr.max_events_per_sec=275
