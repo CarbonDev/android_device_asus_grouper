@@ -1,6 +1,6 @@
-#
+#!/bin/bash
+
 # Copyright (C) 2012 The CyanogenMod Project
-# Copyright (C) 2012 The Carbon Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,24 +13,21 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# device
-$(call inherit-product, device/asus/grouper/device.mk)
+DEVICE=grouper
+MANUFACTURER=asus
 
-# full
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+BASE=../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+mkdir -p $BASE
+for FILE in `cat proprietary-blobs.txt | grep -v "^#"`; do
+#    DIR=`dirname $FILE`
+#    if [ ! -d $BASE$DIR ]; then
+#        echo "making $BASE$DIR..."
+#        mkdir -p $BASE$DIR
+#    fi
+    echo Pulling $FILE to $BASE
+#    adb pull $FILE $BASE$FILE
+    adb pull $FILE $BASE/
+done
 
-# product
-PRODUCT_NAME := carbon_grouper
-PRODUCT_DEVICE := grouper
-PRODUCT_BRAND := Google
-PRODUCT_MANUFACTURER := Asus
-PRODUCT_MODEL := Nexus 7
-
-# restrict
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := Full Android on Grouper
-
-# Don't restrict vendor folder
-PRODUCT_RESTRICT_VENDOR_FILES := false
+./setup-makefiles.sh

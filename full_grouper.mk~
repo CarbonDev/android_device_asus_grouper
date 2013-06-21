@@ -24,13 +24,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # product
 PRODUCT_NAME := carbon_grouper
 PRODUCT_DEVICE := grouper
+<<<<<<< HEAD
 PRODUCT_BRAND := Google
 PRODUCT_MANUFACTURER := Asus
 PRODUCT_MODEL := Nexus 7
 
 # restrict
+=======
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := Full Android on Grouper
 
 # Don't restrict vendor folder
+>>>>>>> d4260fc81cbe780148a5aea48d9f19cdcbd5ddff
 PRODUCT_RESTRICT_VENDOR_FILES := false
