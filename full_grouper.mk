@@ -24,11 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # product
 PRODUCT_NAME := carbon_grouper
 PRODUCT_DEVICE := grouper
-PRODUCT_BRAND := Google
 PRODUCT_MANUFACTURER := Asus
-PRODUCT_MODEL := Nexus 7
-
-# restrict
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := Full Android on Grouper
 
