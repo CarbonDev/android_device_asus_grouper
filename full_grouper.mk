@@ -28,5 +28,9 @@ PRODUCT_BRAND := Google
 PRODUCT_MANUFACTURER := Asus
 PRODUCT_MODEL := Nexus 7
 
+# restrict
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := Full Android on Grouper
+
 # Don't restrict vendor folder
 PRODUCT_RESTRICT_VENDOR_FILES := false
