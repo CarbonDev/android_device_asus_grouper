@@ -41,9 +41,11 @@ BOARD_SEPOLICY_UNION := \
         device.te \
         drmserver.te \
         file.te \
+        gpsd.te \
+        init_shell.te \
+        keystore.te \
         mediaserver.te \
         sensors_config.te \
-        shell.te \
         surfaceflinger.te \
         system.te \
         zygote.te
