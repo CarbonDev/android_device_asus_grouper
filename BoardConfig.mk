@@ -28,6 +28,7 @@ include device/asus/grouper/BoardConfigCommon.mk
 TARGET_OTA_ASSERT_DEVICE := grouper
 
 TARGET_RECOVERY_FSTAB = device/asus/grouper/fstab.grouper
+RECOVERY_FSTAB_VERSION = 2
 
 BOARD_SEPOLICY_DIRS := \
         device/asus/grouper/sepolicy
