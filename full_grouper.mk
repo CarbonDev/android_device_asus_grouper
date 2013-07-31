@@ -18,15 +18,16 @@
 # device
 $(call inherit-product, device/asus/grouper/device.mk)
 
-# full
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+# This is where we'd set a backup provider if we had one
+#$(call inherit-product, device/sample/products/backup_overlay.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # product
 PRODUCT_NAME := carbon_grouper
 PRODUCT_DEVICE := grouper
 PRODUCT_MANUFACTURER := Asus
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Full Android on Grouper
+PRODUCT_MODEL := AOSP on Grouper
 
 # Don't restrict vendor folder
 PRODUCT_RESTRICT_VENDOR_FILES := false
