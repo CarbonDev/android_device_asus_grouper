@@ -33,21 +33,16 @@
 # 526897 = JOP39B
 # 527221 = JOP40
 # 527662 = JOP40C
-# 533553 = JOP40D
 # end jb-mr1-dev
-# start jb-mr1.1-dev
-# 551245 = JDP82
-# 573038 = JDQ39
-# end jb-mr1.-dev
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=573038
+BUILD=527662
 DEVICE=grouper
 PRODUCT=nakasi
-VERSION=jdq39
+VERSION=jop40c
 SRCPREFIX=signed-
 BOOTLOADERFILE=bootloader.bin
-BOOTLOADER=4.18
+BOOTLOADER=4.13
 SLEEPDURATION=10
 UNLOCKBOOTLOADER=true
 ERASEALL=true

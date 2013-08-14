@@ -27,7 +27,6 @@ PRODUCT_NAME := carbon_grouper
 PRODUCT_DEVICE := grouper
 PRODUCT_MANUFACTURER := Asus
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on Grouper
-
 # Don't restrict vendor folder
 PRODUCT_RESTRICT_VENDOR_FILES := false
+PRODUCT_MODEL := AOSP on Grouper
