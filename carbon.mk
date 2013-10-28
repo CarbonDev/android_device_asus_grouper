@@ -13,7 +13,7 @@ $(call inherit-product, vendor/carbon/config/common_tablet.mk)
 # products
 PRODUCT_DEVICE := grouper
 PRODUCT_BRAND := Google
-PRODUCT_NAME := carbon_grouper
+PRODUCT_NAME := triangle_grouper
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := Asus
 PRODUCT_PROPERTY_OVERRIDES += ro.buildzipid=carbon.grouper.$(shell date +%m%d%y).$(shell date +%H%M%S)
