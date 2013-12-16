@@ -29,4 +29,4 @@ PRODUCT_MANUFACTURER := Asus
 PRODUCT_BRAND := Android
 # Don't restrict vendor folder
 PRODUCT_RESTRICT_VENDOR_FILES := false
-PRODUCT_MODEL := AOSP on Grouper
+PRODUCT_MODEL := CyanogenMod on Grouper

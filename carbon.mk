@@ -19,4 +19,4 @@ PRODUCT_MANUFACTURER := Asus
 PRODUCT_PROPERTY_OVERRIDES += ro.buildzipid=carbon.grouper.$(shell date +%m%d%y).$(shell date +%H%M%S)
 
 #Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasi/grouper:4.3/JWR66V/573038:user/release-keys" PRIVATE_BUILD_DESC="nakasi-user 4.3 JWR66V 573038 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasi/grouper:4.4.2/KOT49H/937116:user/release-keys" PRIVATE_BUILD_DESC="nakasi-user 4.4.2 KOT49H 937116 release-keys"

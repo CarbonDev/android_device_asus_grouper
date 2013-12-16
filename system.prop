@@ -16,4 +16,8 @@ debug.nfc.se=false
 # Set Default LCD Density
 ro.sf.lcd_density=213
 
-windowsmgr.max_events_per_sec=275
+# don't preload OpenGL in Zygote, the Tegra drivers do not like it
+ro.zygote.disable_gl_preload=true
+
+# configure PRISM
+persist.tegra.didim.video = 5
