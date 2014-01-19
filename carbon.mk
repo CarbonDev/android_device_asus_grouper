@@ -1,6 +1,10 @@
 # name
 PRODUCT_RELEASE_NAME := Nexus7
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 800
+
 # device
 $(call inherit-product, device/asus/grouper/full_grouper.mk)
 
