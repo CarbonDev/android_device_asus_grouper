@@ -6,10 +6,8 @@
       "revision": "cm-11.0"
     },
     {
-      "remote": "tm",
-      "repository": "proprietary_vendor_asus",
-      "target_path": "vendor/asus",
-      "revision": "cm-11.0"
+      "repository": "CarbonDev/proprietary_vendor_asus",
+      "target_path": "vendor/asus"
     },
     {
       "remote": "tm",
